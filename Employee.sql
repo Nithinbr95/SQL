@@ -102,6 +102,35 @@ select * from employee where mng_id like 303;
 select * from employee where emp_exp like 10;
 select * from employee where id like 3;
 
+select * from employee order by id;
+
+select * from employee order by emp_id;
+select * from employee order by emp_sal;
+
+select * from employee limit 5;
+select * from employee limit 10;
+select * from employee limit 10,15;
+select * from employee length;
+
+select upper(emp_dept)from employee;
+select upper(emp_mng)from employee;
+select upper(emp_name)from employee;
+
+select upper(emp_mng)from employee;
+select upper(emp_dept)from employee;
+select lower(emp_name)from employee;
+select lower(emp_mng_name)from employee;
+select lower(emp_mng)from employee;
+select lower(id)from employee;
+select lower(emp_sal)from employee;
+select instr(emp_name,'a')from employee;
+select instr(emp_dept,'e')from employee;
+select instr(emp_mng,'T')from employee;
+select instr(emp_mng_name,'d')from employee;
+select instr(emp_name,'h')from employee;
+
+
+
 select * from product;
 
 select * from product where id = 5 and prd_price = 199.99;
@@ -140,12 +169,30 @@ select * from product where prd_brand like "PhotoBrand";
 select * from product where manufactured_by like "SoundInc";
 select * from product where id like 19;
 
+select * from productlist order by id;
 
+select * from productlist order by id;
 
-
-
-
-
+select * from productlist order by prd_quantity;
+select * from productlist limit 5;
+select * from productlist limit 10;
+select * from productlist limit 10,15;
+select * from productlist length;
+select upper(prd_name)from productlist;
+select upper(prd_quantity)from productlist;
+select upper(manufactured_by)from productlist;
+select upper(id)from productlist;
+select upper(prd_brand)from productlist;
+select lower(prd_name)from productlist;
+select lower(prd_quantity)from productlist;
+select lower(manufactured_by)from productlist;
+select lower(id)from productlist;
+select lower(prd_brand)from productlist;
+select instr(prd_brand,'a')from productlist;
+select instr(prd_brand,'e')from productlist;
+select instr(manufactured_by,'T')from productlist;
+select instr(manufactured_by,'d')from productlist;
+select instr(manufactured_by,'c')from productlist;
 
 
 
